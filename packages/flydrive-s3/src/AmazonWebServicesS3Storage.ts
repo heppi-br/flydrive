@@ -215,8 +215,8 @@ export class AmazonWebServicesS3Storage extends Storage {
 	 * Creates a new file.
 	 * This method will create missing directories on the fly.
 	 */
-	public async put(location: string, content: Buffer | NodeJS.ReadableStream | string): Promise<Response> {
-		const params = { Key: location, Body: content, Bucket: this.$bucket };
+	public async put(location: string, content: Buffer | NodeJS.ReadableStream | string, options: AmazonWebServicesS3Options): Promise<Response> {
+		const params = { Key: location, Body: content, Bucket: this.$bucket, ACL: options.acl, ContentType: options.contentType };
 		try {
 			const result = await this.$driver.upload(params).promise();
 			return { raw: result };
@@ -261,4 +261,9 @@ export interface AmazonWebServicesS3StorageConfig extends ClientConfiguration {
 	key: string;
 	secret: string;
 	bucket: string;
+}
+
+export interface AmazonWebServicesS3Options {
+	acl?: string;
+	contentType?: string;
 }
