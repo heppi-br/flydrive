@@ -30,7 +30,7 @@ import {
 	UnknownException,
 	AuthorizationRequired,
 	WrongKeyPath,
-} from '@slynova/flydrive';
+} from '@heppi_br/flydrive';
 
 function handleError(err: Error & { code?: number | string }, path: string): Error {
 	switch (err.code) {
@@ -208,7 +208,7 @@ export class GoogleCloudStorage extends Storage {
 	 * Creates a new file.
 	 * This method will create missing directories on the fly.
 	 */
-	public async put(location: string, content: Buffer | NodeJS.ReadableStream | string): Promise<Response> {
+	public async put(location: string, content: Buffer | NodeJS.ReadableStream | string, _: any): Promise<Response> {
 		const file = this._file(location);
 
 		try {

@@ -7,7 +7,7 @@
 
 import fs from 'fs-extra';
 import S3 from 'aws-sdk/clients/s3';
-import { NoSuchBucket, FileNotFound } from '@slynova/flydrive';
+import { NoSuchBucket, FileNotFound } from '@heppi_br/flydrive';
 
 import { AmazonWebServicesS3Storage, AmazonWebServicesS3StorageConfig } from '../src/AmazonWebServicesS3Storage';
 import { streamToString } from '../../../test/utils';

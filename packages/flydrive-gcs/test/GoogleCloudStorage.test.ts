@@ -7,7 +7,7 @@
 
 import uuid from '@lukeed/uuid';
 import { Storage } from '@google-cloud/storage';
-import { FileNotFound } from '@slynova/flydrive';
+import { FileNotFound } from '@heppi_br/flydrive';
 
 import { GoogleCloudStorage } from '../src/GoogleCloudStorage';
 import { streamToString, getFlatList } from '../../../test/utils';

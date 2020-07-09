@@ -32,10 +32,10 @@
     "aws-sdk": "^2.680.0"
   },
   "peerDependencies": {
-    "@slynova/flydrive": "^1.0.0"
+    "@heppi_br/flydrive": "^1.0.0"
   },
   "devDependencies": {
-    "@slynova/flydrive": "^1.0.2",
+    "@heppi_br/flydrive": "^0.0.1",
     "@types/fs-extra": "^9.0.1",
     "fs-extra": "^9.0.0"
   },

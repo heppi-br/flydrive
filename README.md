@@ -76,7 +76,7 @@ storage.disk('local').getSignedUrl();
 Since we are using TypeScript, you can make use of casting to get the real interface:
 
 ```typescript
-import { LocalFileSystemStorage } from '@slynova/flydrive';
+import { LocalFileSystemStorage } from '@heppi_br/flydrive';
 
 storage.disk<LocalFileSystemStorage>('local');
 ```
