@@ -30,10 +30,10 @@
     "@google-cloud/storage": "^5.0.0"
   },
   "peerDependencies": {
-    "@heppi_br/flydrive": "^1.0.0"
+    "@heppi_br/flydrive": "^0.0.3"
   },
   "devDependencies": {
-    "@heppi_br/flydrive": "^0.0.1",
+    "@heppi_br/flydrive": "^0.0.3",
     "@lukeed/uuid": "^1.0.1",
     "@types/fs-extra": "^9.0.1"
   },
