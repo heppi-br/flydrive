@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.0.2 (2020-07-09)
+
+
+### Bug Fixes
+
+* **drivers:** add entry points ([b9a9274](https://github.com/Slynova-Org/flydrive/commit/b9a92745b41b640d4613525bde48ce630e6cefab))
+* **storage:** replace Readable with NodeJS.ReadableStream ([#150](https://github.com/Slynova-Org/flydrive/issues/150)) ([5a54acf](https://github.com/Slynova-Org/flydrive/commit/5a54acfe545c2fca3690a2e48261b973ba56004c))
+
+
+
+
+
 ## [1.0.2](https://github.com/Slynova-Org/flydrive/compare/@slynova/flydrive-gcs@1.0.1...@slynova/flydrive-gcs@1.0.2) (2020-07-07)
 
 
